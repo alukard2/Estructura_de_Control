@@ -4,17 +4,24 @@
  */
 package estructura_de_control;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  *
- * @author JUANCHO
+ * @author Juan Carlos Reyes Barreto
  */
 public class Estructura_de_Control {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws IOException {
+        System.out.println("Hola Mundo");
+        BufferedReader leer = new BufferedReader (new InputStreamReader(System.in));
+        System.out.println("Ingresar la cantidad de su salario");
+        double salario = Double.parseDouble(leer.readLine());
     }
     
 }
